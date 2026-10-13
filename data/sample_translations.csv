@@ -1,0 +1,41 @@
+source_text,translated_text,reference_text,human_score
+The meeting starts at nine in the morning.,La reunión comienza a las nueve de la mañana.,La reunión empieza a las nueve de la mañana.,0.93
+The meeting starts at nine in the morning.,La reunión empieza nueve en la mañana.,La reunión empieza a las nueve de la mañana.,0.55
+Please close the door when you leave.,Por favor cierra la puerta cuando te vayas.,"Por favor, cierra la puerta cuando salgas.",0.88
+Please close the door when you leave.,Por favor cerrar puerta cuando dejas.,"Por favor, cierra la puerta cuando salgas.",0.4
+She has been studying medicine for three years.,Ella ha estado estudiando medicina durante tres años.,Ella lleva tres años estudiando medicina.,0.9
+She has been studying medicine for three years.,Ella tiene estudiando medicina por tres años.,Ella lleva tres años estudiando medicina.,0.45
+We could not find the file you requested.,No pudimos encontrar el archivo que usted solicitó.,No pudimos encontrar el archivo que solicitó.,0.95
+We could not find the file you requested.,No podíamos encontrar el fichero tú pedido.,No pudimos encontrar el archivo que solicitó.,0.4
+The train to Madrid leaves from platform four.,El tren a Madrid sale de la vía cuatro.,El tren a Madrid sale de la vía cuatro.,1.0
+The train to Madrid leaves from platform four.,El tren de Madrid deja del plataforma cuatro.,El tren a Madrid sale de la vía cuatro.,0.5
+I would like a cup of coffee with milk.,Me gustaría una taza de café con leche.,Quisiera una taza de café con leche.,0.92
+I would like a cup of coffee with milk.,Yo quiero taza de café con la leche de.,Quisiera una taza de café con leche.,0.35
+The weather will be sunny tomorrow.,Mañana estará soleado.,Mañana hará sol.,0.85
+The weather will be sunny tomorrow.,El clima será sol mañana.,Mañana hará sol.,0.45
+Our company was founded in 1998.,Nuestra empresa fue fundada en 1998.,Nuestra empresa fue fundada en 1998.,0.98
+Our company was founded in 1998.,Nuestro compañía fundó en 1998.,Nuestra empresa fue fundada en 1998.,0.42
+He forgot his keys at the office again.,Olvidó sus llaves en la oficina otra vez.,Se le olvidaron las llaves en la oficina otra vez.,0.85
+He forgot his keys at the office again.,Él olvidó su llaves a la oficina de nuevo otra.,Se le olvidaron las llaves en la oficina otra vez.,0.45
+The doctor said the results are normal.,El médico dijo que los resultados son normales.,El médico dijo que los resultados son normales.,0.98
+The doctor said the results are normal.,El médico dijo los resultados son anormales.,El médico dijo que los resultados son normales.,0.2
+Children under twelve do not pay for the ticket.,Los niños menores de doce años no pagan el billete.,Los niños menores de doce años no pagan la entrada.,0.9
+Children under twelve do not pay for the ticket.,Los niños de doce años pagan la entrada.,Los niños menores de doce años no pagan la entrada.,0.15
+Turn left at the second traffic light.,Gire a la izquierda en el segundo semáforo.,Gira a la izquierda en el segundo semáforo.,0.93
+Turn left at the second traffic light.,Gira a la derecha en el segundo semáforo.,Gira a la izquierda en el segundo semáforo.,0.2
+The library is open until eight in the evening.,La biblioteca está abierta hasta las ocho de la noche.,La biblioteca está abierta hasta las ocho de la tarde.,0.9
+The library is open until eight in the evening.,La biblioteca abierto hasta ocho de tarde.,La biblioteca está abierta hasta las ocho de la tarde.,0.4
+We need to finish this report by Friday.,Necesitamos terminar este informe antes del viernes.,Necesitamos terminar este informe para el viernes.,0.9
+We need to finish this report by Friday.,Necesitamos terminar esto reporte por viernes.,Necesitamos terminar este informe para el viernes.,0.45
+My brother lives in a small village near the coast.,Mi hermano vive en un pequeño pueblo cerca de la costa.,Mi hermano vive en un pueblo pequeño cerca de la costa.,0.95
+My brother lives in a small village near the coast.,Mi hermano vive en pueblo cerca costa pequeño.,Mi hermano vive en un pueblo pequeño cerca de la costa.,0.4
+The new phone has a better camera than the old one.,El nuevo teléfono tiene una cámara mejor que el viejo.,El teléfono nuevo tiene una cámara mejor que el anterior.,0.9
+The new phone has a better camera than the old one.,El teléfono nuevo tiene una cámara peor que el anterior.,El teléfono nuevo tiene una cámara mejor que el anterior.,0.2
+Please send me the invoice by email.,Por favor envíeme la factura por correo electrónico.,"Por favor, envíame la factura por correo electrónico.",0.95
+Please send me the invoice by email.,Por favor enviar yo la factura por correo.,"Por favor, envíame la factura por correo electrónico.",0.42
+They are planning a trip to the mountains this summer.,Están planificando un viaje a las montañas este verano.,Están planeando un viaje a la montaña este verano.,0.92
+They are planning a trip to the mountains this summer.,Ellos planean un viaje montañas esto verano.,Están planeando un viaje a la montaña este verano.,0.38
+The store closes early on Sundays.,La tienda cierra temprano los domingos.,La tienda cierra temprano los domingos.,0.99
+The store closes early on Sundays.,La tienda cierra tarde los domingos.,La tienda cierra temprano los domingos.,0.25
+I have never seen such a beautiful sunset.,Nunca he visto una puesta de sol tan hermosa.,Nunca he visto un atardecer tan hermoso.,0.93
+I have never seen such a beautiful sunset.,Yo no nunca vi tal hermoso atardecer.,Nunca he visto un atardecer tan hermoso.,0.5

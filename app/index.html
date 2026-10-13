@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ETI - Evaluating Translation Inaccuracies</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 760px; margin: 2rem auto; padding: 0 1rem; }
+  textarea { width: 100%; box-sizing: border-box; margin-bottom: 1rem; font: inherit; }
+  td { padding: 2px 16px 2px 0; }
+  .error { color: #b00020; }
+  .warning { color: #8a5a00; }
+</style>
+</head>
+<body>
+<h1>ETI</h1>
+<p>Estimate the quality of a machine translation.</p>
+<form id="form">
+  <label>Source text<textarea id="source" rows="3" required></textarea></label>
+  <label>Machine translation<textarea id="translation" rows="3" required></textarea></label>
+  <label>Reference translation (optional)<textarea id="reference" rows="3"></textarea></label>
+  <button type="submit">Evaluate</button>
+</form>
+<div id="result"></div>
+<script>
+const out = document.getElementById("result");
+
+function add(tag, text, className) {
+  const element = document.createElement(tag);
+  element.textContent = text;
+  if (className) element.className = className;
+  out.append(element);
+}
+
+function addTable(title, values) {
+  add("h3", title);
+  const table = document.createElement("table");
+  for (const [key, value] of Object.entries(values)) {
+    const row = table.insertRow();
+    row.insertCell().textContent = key;
+    row.insertCell().textContent = Number(value).toFixed(3);
+  }
+  out.append(table);
+}
+
+document.getElementById("form").addEventListener("submit", async (event) => {
+  event.preventDefault();
+  const body = {
+    source_text: document.getElementById("source").value,
+    translated_text: document.getElementById("translation").value,
+    reference_text: document.getElementById("reference").value || null,
+  };
+  const response = await fetch("/predict", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(body),
+  });
+  const data = await response.json();
+  out.textContent = "";
+  if (!response.ok) {
+    const detail = Array.isArray(data.detail)
+      ? data.detail.map((d) => d.loc.slice(1).join(".") + ": " + d.msg).join("; ")
+      : data.detail;
+    return add("p", detail, "error");
+  }
+  data.warnings.forEach((warning) => add("p", warning, "warning"));
+  addTable("Features", data.features);
+  if (data.predictions) {
+    addTable("Predicted quality (0-1)", data.predictions);
+    add("p", data.interpretation);
+  }
+});
+</script>
+</body>
+</html>
